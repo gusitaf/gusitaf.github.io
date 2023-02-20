@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米官网</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div class="box">
+        <!-- 头部导航栏 -->
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo-mi2.png" alt="图片加载失败" title="小米商城">
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="">小米官网</a></li>
+                    <li><a href="">小米商城</a></li>
+                    <li><a href="">小米影像</a></li>
+                    <li><a href="">MIUI</a></li>
+                    <li><a href="">loT</a></li>
+                    <li><a href="">云服务</a></li>
+                    <li><a href="">天星数科</a></li>
+                    <li><a href="">有品</a></li>
+                    <li><a href="">小爱开放平台</a></li>
+                    <li><a href="">企业团购</a></li>
+                </ul>
+            </div>
+            <div class="login">登录 注册</div>
+        </div>
+        <!-- 主题 -->
+        <div class="page">
+            <div class="page1">
+                <div>
+                    <img src="images/4bbc32cf_1fe0_45aa_a48f_74b9282edf9f.jpeg" alt="">
+                </div>
+            </div>
+            <div class="page2">
+                <ul class="images">
+                    <li><img src="images/f82df6e9_c4e2_41c5_98f1_3b6dbffddaaf.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li><li><img src="images/f9e992cd_8a4b_4c54_81b8_a1e11ce05c06.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                </ul>
+                <ul class="but">
+                    <li class="orange"></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="page3">
+                <div>
+                    <a href="">
+                        <img src="images/e5395cf8_3fa0_473b_a2d1_645272e66e6b.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="page4">
+                <div>
+                    <a href="">
+                        <img src="images/7bb4ef03_588a_49c7_bb9a_a18632681865.jpeg" alt="">
+                    </a>
+                    <div class="play"></div>
+                </div>
+            </div>
+            <div class="page5">
+                <div>
+                    <ul class="images">
+                        <li><img src="images/1.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                        <li><img src="images/11558adb_831e_4a73_8142_596fc27a6b57.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                        <li><img src="images/66005473_c304_4313_afe4_3e8f0c4bdbce.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                        <li><img src="images/b61e58d3_06cd_4eef_b018_38a912e8f12f.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                        <li><img src="images/df822203_d5a8_4fea_a276_970713186173.jpeg@base@tag=imgScale&F=webp&h=1080&q=90&w=2560" alt=""></li>
+                    </ul>
+                    <ul class="but">
+                        <li class="orange"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var but = document.querySelector('.page2').querySelector('.but').querySelectorAll('li');
+        var image = document.querySelector('.page2').querySelector('.images');
+        but[0].addEventListener('click',function(){
+            image.style.left = 0+'px';
+        });
+        but[1].addEventListener('click',function(){
+            image.style.left = -1385+'px';
+        });
+        for(var i = 0;i<but.length;i++){
+            but[i].addEventListener('click',function(){
+                for(var j = 0;j<but.length;j++){
+                    but[j].className = "";
+                }
+                this.className = "orange";
+            })
+        };
+        var but1 = document.querySelector('.page5').querySelector('.but').querySelectorAll('li');
+        var image1 = document.querySelector('.page5').querySelector('.images');
+        but1[0].addEventListener('click',function(){
+            image1.style.left = 0+'px';
+        });
+        but1[1].addEventListener('click',function(){
+            image1.style.left = -1385+'px';
+        });
+        but1[2].addEventListener('click',function(){
+            image1.style.left = -(1385*2)+'px';
+        });
+        but1[3].addEventListener('click',function(){
+            image1.style.left = -(1385*3)+'px';
+        });
+        but1[4].addEventListener('click',function(){
+            image1.style.left = -(1385*4)+'px';
+        });
+        for(var i = 0;i<but1.length;i++){
+            but1[i].addEventListener('click',function(){
+                for(var j = 0;j<but1.length;j++){
+                    but1[j].className = "";
+                }
+                this.className = "orange";
+            })
+        };
+    </script>
+</body>
+</html>

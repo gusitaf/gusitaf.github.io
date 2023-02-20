@@ -1,0 +1,134 @@
+body{
+    height: 1300px;
+}
+.nav{
+    height: 65px;
+    padding: 15px 21px;
+    background-color: rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), 1);
+    position: fixed;
+}
+.nav .logo{
+    float: left;
+}
+.nav .logo img{
+    width: 34px;
+    height: 34px;
+}
+.nav .list{
+    float: left;
+    margin: 10px 160px;
+}
+.nav .list ul li{
+    float: left;
+    padding: 0 20px;
+}
+.nav .list ul li a{
+    color: #fff;
+    font-size: 14px;
+    padding: 30px 0;
+}
+.nav .login{
+    float: right;
+}
+.page .page1 div{
+    height: 590px;
+}
+.page .page1 img{
+    width: 100%;
+    height: 590px;
+    border: 0;
+}
+.page .page2{
+    width: 1380px;
+    height: 590px;
+    position: relative;
+    overflow: hidden;
+}
+.page .page2 .images{
+    width: 2765px;
+    position: absolute;
+    left: 0px;
+    transition: 0.6s;
+}
+.page .page2 .images li {
+    height: 590px;
+    display: inline;
+}
+.page .page2 .images li img{
+    width: 1380px;
+    height: 590px;
+}
+.page .page2 .but{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+}
+.page .page2 .but li{
+    width: 90px;
+    height: 5px;
+    background-color: #fff;
+    display: inline-block;
+}
+.page .page2 .but .orange{
+    background-color: coral;
+}
+.page .page3 img{
+    width: 100%;
+    height: 590px;
+    display: block;
+}
+.page .page4{
+    position: relative;
+}
+.page .page4 img{
+    width: 100%;
+    height: 590px;
+    display: block;
+}
+.page .page4 .play{
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    background: url('images/zwyplay1.png') no-repeat;
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+}
+.page .page5 .images{
+    width: 500%;
+    position: absolute;
+    left: 0;
+    transition: 0.6s;
+}
+.page .page5 ul li{
+    float: left;
+}
+.page .page5 div{
+    position: relative;
+    height: 590px;
+    overflow: hidden;
+}
+.page .page5 .but{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 60px;
+}
+.page .page5 .but li{
+    background-color: #fff;
+    display: inline-block;
+    width: 80px;
+    height: 6px;
+}
+.page .page5 .but .orange{
+    background-color: coral;
+}
+.page .page5 ul li img{
+    width: 1380px;
+    height: 590px;
+    display: block;
+}
